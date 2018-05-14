@@ -4,7 +4,7 @@ applications:
   host: allocations-pal-nh
   memory: 1G
   instances: 1
-  env:
+#  env:
 #    REGISTRATION_SERVER_ENDPOINT: https://registration-pal-nh.apps.pikes.pal.pivotal.io/
   services:
   - tracker-allocations-database
