@@ -10,4 +10,17 @@ dependencies {
     compile "ch.qos.logback:logback-classic:1.1.11"
 
     testCompile project(":components:test-support")
+
+    //Adding dependencies to the jar file
+    compile "org.springframework.boot:spring-boot-starter-actuator"
+    compile "io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry"
+}
+
+
+apply plugin: "io.spring.dependency-management"
+
+dependencyManagement {
+    imports {
+        mavenBom "io.pivotal.spring.cloud:spring-cloud-services-dependencies:$springCloudServicesVersion"
+    }
 }

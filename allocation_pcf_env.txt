@@ -1,0 +1,66 @@
+Getting env variables for app tracker-allocations in org navid-heydari / space sandbox as navid.heydari1@t-mobile.com...
+OK
+
+System-Provided:
+{
+ "VCAP_SERVICES": {
+  "p-mysql": [
+   {
+    "binding_name": null,
+    "credentials": {
+     "hostname": "10.0.8.18",
+     "jdbcUrl": "jdbc:mysql://10.0.8.18:3306/cf_dbe6fd48_d4ad_4cdf_a7bb_0cb77dd21731?user=Gw0jq3ozWbv5oiMU\u0026password=poPxdIKTIEvBS3J7",
+     "name": "cf_dbe6fd48_d4ad_4cdf_a7bb_0cb77dd21731",
+     "password": "poPxdIKTIEvBS3J7",
+     "port": 3306,
+     "uri": "mysql://Gw0jq3ozWbv5oiMU:poPxdIKTIEvBS3J7@10.0.8.18:3306/cf_dbe6fd48_d4ad_4cdf_a7bb_0cb77dd21731?reconnect=true",
+     "username": "Gw0jq3ozWbv5oiMU"
+    },
+    "instance_name": "tracker-allocations-database",
+    "label": "p-mysql",
+    "name": "tracker-allocations-database",
+    "plan": "100mb",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "mysql",
+     "relational"
+    ],
+    "volume_mounts": []
+   }
+  ]
+ }
+}
+
+{
+ "VCAP_APPLICATION": {
+  "application_id": "8a820af3-7431-4e64-b01a-b6c5934ebfca",
+  "application_name": "tracker-allocations",
+  "application_uris": [
+   "allocations-pal-nh.apps.pikes.pal.pivotal.io"
+  ],
+  "application_version": "cd475d22-e656-48ea-95c0-6747c5d82491",
+  "cf_api": "https://api.sys.pikes.pal.pivotal.io",
+  "limits": {
+   "disk": 1024,
+   "fds": 16384,
+   "mem": 1024
+  },
+  "name": "tracker-allocations",
+  "space_id": "d59be69d-faf9-4574-b366-5bd2a4c30af4",
+  "space_name": "sandbox",
+  "uris": [
+   "allocations-pal-nh.apps.pikes.pal.pivotal.io"
+  ],
+  "users": null,
+  "version": "cd475d22-e656-48ea-95c0-6747c5d82491"
+ }
+}
+
+User-Provided:
+REGISTRATION_SERVER_ENDPOINT: https://registration-pal-nh.apps.pikes.pal.pivotal.io/
+
+No running env variables have been set
+
+No staging env variables have been set
+

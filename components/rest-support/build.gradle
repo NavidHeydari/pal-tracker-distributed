@@ -1,3 +1,5 @@
 dependencies {
     compile "org.springframework:spring-web:$springVersion"
+    // to get the ribbon dependencies - this is workning as a load balancer
+    compile "org.springframework.cloud:spring-cloud-commons:1.1.8.RELEASE"
 }

@@ -1,0 +1,6 @@
+https://registration-pal-nh.apps.pikes.pal.pivotal.io/users/4
+https://registration-pal-nh.apps.pikes.pal.pivotal.io/accounts?ownerId=4
+https://registration-pal-nh.apps.pikes.pal.pivotal.io/projects?accountId=4
+https://allocations-pal-nh.apps.pikes.pal.pivotal.io/allocations?projectId=7
+https://backlog-pal-nh.apps.pikes.pal.pivotal.io/stories?projectId=7
+https://timesheets-pal-nh.apps.pikes.pal.pivotal.io/time-entries?userId=4
