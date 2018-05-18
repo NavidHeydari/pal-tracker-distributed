@@ -18,6 +18,14 @@ dependencies {
     // related to circute breaker and hystrix
     compile "io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker"
 
+
+    //adding dependencies for authenticatoin using oauth
+    //The spring-cloud-starter-oauth2 dependency will allow us to configure applications as resource servers.
+    compile "org.springframework.cloud:spring-cloud-starter-oauth2"
+    //The spring-cloud-sso-connector dependency will automate configuration of the application when bound to an identity service on PCF.
+    compile "io.pivotal.spring.cloud:spring-cloud-sso-connector:$springCloudSsoVersion"
+
+
 }
 
 
@@ -28,3 +36,12 @@ dependencyManagement {
         mavenBom "io.pivotal.spring.cloud:spring-cloud-services-dependencies:$springCloudServicesVersion"
     }
 }
+
+//for locally oauth creating some environmental variables that have clientID and client secret
+bootRun.environment([
+        "APPLICATION_OAUTH_ENABLED": true,
+        "SECURITY_OAUTH2_CLIENT_CLIENT_ID": "tracker-client",
+        "SECURITY_OAUTH2_CLIENT_CLIENT_SECRET": "supersecret",
+        "SECURITY_USER_NAME": "actuator",
+        "SECURITY_USER_PASSWORD": "operations4red"
+])

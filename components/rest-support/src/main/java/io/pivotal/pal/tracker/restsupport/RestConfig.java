@@ -12,11 +12,12 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class RestConfig {
 
-    @Bean
-    @LoadBalanced // using Ribbon to loadbalance this bean
-    public RestOperations restOperations() {
-        return new RestTemplate();
-    }
+    //no need for this when we are using oauth since this restoperations needs to be managed in every components seperaetly.
+//    @Bean
+//    @LoadBalanced // using Ribbon to loadbalance this bean
+//    public RestOperations restOperations() {
+//        return new RestTemplate();
+//    }
 
     @Bean
     public ObjectMapper objectMapper() {

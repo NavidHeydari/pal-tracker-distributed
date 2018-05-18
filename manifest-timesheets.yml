@@ -6,6 +6,11 @@ applications:
   instances: 1
 #  env:
 #    REGISTRATION_SERVER_ENDPOINT: https://registration-pal-nh.apps.pikes.pal.pivotal.io/
+env:
+  GRANT_TYPE: client_credentials
+  SECURITY_USER_NAME: actuator
+  SECURITY_USER_PASSWORD: operations4red
+
   services:
   - tracker-timesheets-database
   - tracker-service-registry
