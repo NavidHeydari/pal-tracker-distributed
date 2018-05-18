@@ -2,5 +2,9 @@ dependencies {
     compile project(":components:rest-support")
     compile "org.springframework:spring-jdbc:$springVersion"
 
+
+    //hystrix for circute breaker part.
+    compile "com.netflix.hystrix:hystrix-javanica:1.5.6"
+
     testCompile project(":components:test-support")
 }

@@ -14,6 +14,10 @@ dependencies {
     //Adding dependencies to the jar file
     compile "org.springframework.boot:spring-boot-starter-actuator"
     compile "io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry"
+
+    // related to circute breaker and hystrix
+    compile "io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker"
+
 }
 
 
