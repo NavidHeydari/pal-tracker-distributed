@@ -132,6 +132,8 @@ public class FlowTest {
             .put("name", "A story")
             .build()
         );
+
+        System.out.println("\t\t\n\n>>>>>>>>> projectID:"+createdProjectId  + "\n\n response:"  + response + "\n\n");
         long createdStoryId = findResponseId(response);
         assertThat(createdStoryId).isGreaterThan(0);
 

@@ -41,6 +41,8 @@ public class ApplicationServer {
                 .put("RIBBON_EUREKA_ENABLED", "false")
                 .put("REGISTRATION_SERVER_RIBBON_LISTOFSERVERS", "http://localhost:8883") // disbaling eurika and hand it over to the test -- bypass the eurika
 //            .put("REGISTRATION_SERVER_ENDPOINT", "http://localhost:8883") // disbale this line
+                        .put("APPLICATION_OAUTH_ENABLED", "false")
+                //we added application oauth = falsefor our testing - otherwise gets a lots of error. because port might be used by other processes
             .build()
         );
     }
